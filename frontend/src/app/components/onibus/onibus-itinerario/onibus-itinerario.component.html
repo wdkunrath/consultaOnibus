@@ -1,0 +1,11 @@
+<button mat-raised-button (click)="voltar()">
+  Voltar
+</button>
+<mat-card>
+    <mat-card-title>Itinerário - Partida Inicial</mat-card-title>    
+    <p><span>{{itinerario?.codigo}}</span> / {{itinerario?.nome}}</p>
+    <p><a href="https://www.google.com/maps/?q={{lat}},{{lng}}" target="_blak">Ver no Google</a></p>
+    <agm-map [latitude]=-30.08 [zoom]="zoom" [longitude]=-51.22>
+      <agm-marker  [latitude]="lat" [longitude]="lng"></agm-marker>
+    </agm-map>
+</mat-card>

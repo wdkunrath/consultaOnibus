@@ -1,0 +1,33 @@
+<mat-sidenav-container>
+  <mat-sidenav class="sidenav" mode="side" *ngIf="isLoggedIn();" opened fixedInViewport="true" >
+    <mat-nav-list class="nav-list">
+        <a mat-list-item (click)="logout()" routerLink="/">
+            <i class="material-icons">
+                login
+            </i>
+            Logout
+        </a>
+        <a mat-list-item routerLink="/home">
+            <i class="material-icons">
+                home
+            </i>
+            Início
+        </a>
+        <a mat-list-item routerLink="/onibus">
+          <i class="material-icons">
+            directions_bus
+          </i>
+          Lista de ônibus
+        </a>
+        <a mat-list-item routerLink="/lotacao">
+          <i class="material-icons">
+            airport_shuttle
+          </i>
+          Lista de Lotação
+        </a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content class="content">
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

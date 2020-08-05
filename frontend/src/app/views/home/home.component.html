@@ -1,0 +1,51 @@
+﻿<mat-card class="home mat-elevation-z3">
+  <mat-card-title class="title">
+      Bem Vindo!
+  </mat-card-title>
+  <mat-card-subtitle class="subtitle">
+      <br>
+      <h1>Avaliação Prática</h1>
+      <p><strong>Objetivo:</strong> desenvolvimento de um sistema frontend integrado ao DataPoa para consulta de linhas de ônibus e linhas de lotação.</p>
+      <br>
+      <h1>Especificações</h1>
+      <h4><strong>Frontend</strong></h4>
+      <p>O frontend da aplicação tem por requisito ser desenvolvido utilizando, no mínimo, as seguintes tecnologias:</p>
+      <ul>
+        <li>Angular 5 ou posterior</li>
+        <li>Bootstrap 3.3.7 ou posterior</li>
+      </ul>
+      <hr>
+      <h1>Parte 1</h1>
+      <p> Integração com a API do DataPoa:</p>
+      <p><span><a href="http://datapoa.com.br/group/about/mobilidade" target="_blank">DATAPOA</a></span></p>
+      <p>Operações necessárias para a integração e exemplos:</p>
+      <ul>
+        <li>Listar as linhas de <span><a href="http://www.poatransporte.com.br/php/facades/process.php?a=nc&p=%&t=o" target="_blank">ônibus</a></span></li>
+        <li>Listar as linhas de <span><a href="http://www.poatransporte.com.br/php/facades/process.php?a=nc&p=%&t=l" target="_blank">lotação</a></span></li>
+        <li>Obter o <span><a href="http://www.poatransporte.com.br/php/facades/process.php?a=il&p=5527" target="_blank">itinerário</a></span> de uma unidade de transporte</li>
+      </ul>
+      <hr>
+      <h1>Parte 2</h1> 
+      <p>A aplicação deve apresentar uma tela intuitiva que seja possível ao
+        usuário pesquisar sobre linhas de ônibus ou lotação. Deve ser possível listar as
+        linhas e filtrá-las por nome, além de poder consultar o itinerário da unidade de
+        transporte.
+      </p>
+      <hr>
+      <h1>Parte 3</h1>
+      <p>Na consulta de itinerário devem ser listadas todas as localidades da
+        unidade de transporte como links para redirecionar o usuário ao Google Maps.
+        A integração pode ser feita passando os parâmetros de latitude e longitude
+        para a API. Exemplo:
+      </p>
+      <p>https://www.google.com/maps/?q=LATITUDE,LONGITUDE</p>
+      <hr>
+      <h4><strong>Observações extras</strong></h4>
+      <p>Os códigos devem ser escritos levando em consideração boas práticas de
+        programação e design, podendo o desenvolvedor se valer do Angular Style
+        Guide (https://angular.io/guide/styleguide).
+        Como sugestão, a usabilidade da aplicação deve ser elaborada de forma a
+        emitir feedbacks visuais ao usuário, sempre tratando erros de conexão e
+        lentidão com a integração aos serviços externos.</p>
+  </mat-card-subtitle>
+</mat-card>
